@@ -7,14 +7,16 @@ import "./globals.css";
 // hangs at compile and the preview renders blank. Use the zero-network stack in
 // globals.css, or self-host a .woff2 via next/font/local.
 export const metadata: Metadata = {
-  title: "App",
+  title: "RISHI EDITOR ZONE | Video Editing Studio",
+  description:
+    "Reels editing, cinematic edits, VFX, photo editing, and motion graphics. Your vision. Our edit.",
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body className="min-h-dvh antialiased">
         {children}
         {/* Imagine Make preview runtime — only active when framed by the editor. */}
